@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css"> <!-- CSS -->
+    <!-- Fuente propia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <title>Compras</title>
+</head>
+<!-- parte visible -->
+
+<body>
+
+    <header>
+        <!-- inicio navegable / navegacion -->
+        <nav class="navbar navbar-expand-lg navegacion">
+            <div class="container-fluid">
+                <img class="logo--propio" src="../multimedia/ico11.png" alt="Imagendelogo">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/compras.html">Compras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/massobrenosotros.html">Mas sobre nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <p class="titulos1">
+                Nuestros Productos
+            </p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="carouselExampleIndicators" class="carousel slide imagenestamanio carrusel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../multimedia/producto1.jpg" class="d-block w-100 imagenestamanio carrusel"
+                                alt="imagen-de-producto1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/producto2.jpeg" class="d-block w-100 imagenestamanio carrusel"
+                                alt="foto-de-producto2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../multimedia/producto3.jpg" class="d-block w-100 imagenestamanio carrusel"
+                                alt="imagen-de-producto3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- estructura 1 -->
+            <section class="estructurap1">
+                <article>
+                    <p class="titulos1">
+                        Vickingburg
+                    </p>
+                    <!-- foto de la vicking burg -->
+                    <img class="img-fluid imagenestamanio" src="../multimedia/vicking.bmp" alt="imagen-de-vicking-burg">
+                    <p class="parrafos1"> <!-- parrafos 1-->
+                        La Vickingburg es nuestra hamburguesa mas basica, pero
+                        tambien la mas sana de todas, ya que contiene carne
+                        lechuga, Et omnia in potestate nostra esse natura liber,
+                        libera, libere valeant; sed illis non est in nostra
+                        potestate sunt infirmi, servilis, licet, lex pertinet.
+                    </p>
+                    <a class="link-compras" href>$3300</a>
+                    <!-- click de compras -->
+                </article>
+            </section>
+            <!-- estructura 2 -->
+            <section class="estructurap1">
+                <article>
+                    <p class="titulos1">
+                        Tripleburg
+                    </p>
+                    <!-- foto de la burguer triple-->
+                    <img class="img-fluid imagenestamanio" src="../multimedia/triple.bmp" alt="foto-de-tripleburg">
+                    <!-- foto -->
+                    <p class="parrafos1"> <!-- parrafos 2 -->
+                        La Tripleburg es una de nuestras mejores y mas ricas
+                        opciones ya que tiene 3 medallones de carne tomate, it
+                        Lorem ipsum dolor sit amet aliquam sit amet pharetra
+                        leo. Donec vel tortor ac nisl efficitur hendrerit sit
+                        amet sit amet turpis. Maecenas congue vulputate
+                        sagittis. Fusce a ullamcorper justo.
+                    </p>
+                    <a class="link-compras" href>$5000</a>
+                    <!-- click de compras -->
+                </article>
+            </section>
+            <!-- estructura 3 -->
+            <section class="estructurap1">
+                <article>
+                    <p class="titulos1">
+                        Veganburguer
+                    </p>
+                    <!-- foto de burguer -->
+                    <img class="img-fluid imagenestamanio" src="../multimedia/vegan.bmp" alt="burguer-vegana">
+                    <p class="parrafos1"> <!-- parrafos 1-->
+                        La Burguervegana es una buena opcion para las personas
+                        que no
+                        consumen carne o esten a dieta, ya que contiene pan,
+                        lechuga, pepino, is arcu ex, tempor in dictum nec,
+                        commodo non metus. Ut nec ipsum in massa dapibus auctor.
+                        Sed ut condimentum sem, sit amet porta purus.
+                    </p>
+                    <a class="link-compras" href>$6500</a>
+                    <!-- click de compras -->
+                </article>
+            </section>
+            <footer class="foot">
+                <div class="container text-center">
+                    <div class="row align-items-end">
+                        <div class="col">
+                            <a class="foot" href="../index.html">¡¡¡ Llevame a inicio !!!</a>
+                        </div>
+                        <div class="col">
+                            <a class="foot" href="https://www.instagram.com/?hl=es-la">Red social principal</a>
+                        </div>
+                        <div class="col">
+                            Todos los derechos reservados ®
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
