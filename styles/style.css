@@ -1,152 +1,194 @@
+@charset "UTF-8";
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/*Telefonos*/
-@media only screen and (max-width: 400px) {
-    body {
-        background-color: grey;
-    }
-
-    .carousel-inner img {
-        max-width: 400px;
-        height: 350px;
-    }
-
-    .foot {
-        font-size: 11px;
-    }
-
-    .imagenestamanio {
-        width: 400px;
-        height: 250px;
-    }
-
-    .titulos1 {
-        color: black;
-    }
-
-    .parrafos1 {
-        color: black;
-    }
-
-    .link-empresa {
-        width: 350px;
-    }
-}
-
-/*Tablets*/
-@media only screen and (min-width: 401px) and (max-width: 900px) {
-    body {
-        background-color: rgba(255, 187, 0, 0.877);
-    }
-
-    .carousel-inner img {
-        max-width: 48rem;
-        height: 350px;
-    }
-
-    .imagenestamanio {
-        width: 400px;
-        height: 250px;
-    }
-
-    .titulos1 {
-        color: black;
-
-    }
-
-    .parrafos1 {
-        color: black;
-    }
-
-    .link-empresa {
-        width: 350px;
-    }
-}
-
-/*Zona de navegacion*/
+/* Zona de navegacion */
 .navegacion {
-    background-color: rgb(104, 104, 104);
-    font-weight: bolder;
-    font-family: "Sedan SC", serif;
+  background-color: rgb(104, 104, 104);
+  font-weight: bolder;
+  font-family: "Sedan SC", serif;
+  color: black;
+  font-size: 1.3rem;
+}
+
+/* Telefonos */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: grey;
+  }
+  body .carousel-inner img {
+    max-width: 400px;
+    height: 350px;
+  }
+  body .foot {
+    font-size: 11px;
+  }
+  body .imagenestamanio {
+    width: 400px;
+    height: 250px;
+  }
+  body .titulos1,
+  body .parrafos1 {
     color: black;
-    font-size: 1.3rem;
+  }
+  body .link-empresa {
+    width: 350px;
+  }
 }
-
-.link-compras {
-    font-weight: bolder;
-    font-family: "Sedan SC", serif;
+/* Tablets */
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  body {
+    background-color: rgba(255, 187, 0, 0.877);
+  }
+  body .carousel-inner img {
+    max-width: 48rem;
+    height: 350px;
+  }
+  body .imagenestamanio {
+    width: 400px;
+    height: 250px;
+  }
+  body .titulos1,
+  body .parrafos1 {
     color: black;
-    background-color: rgb(140, 247, 140);
-    font-size: 40px;
-    text-decoration: none;
+  }
+  body .link-empresa {
+    width: 350px;
+  }
+}
+/* Tamaño de imagenes, lo puse con (ni) para no usar la ñ */
+.imagenestamanio {
+  width: 700px;
+  height: 450px;
 }
 
-.estructurap1 {
-    display: flex;
+/* Tamaño de las imagenes de mcdonals y burguerkings */
+.imagenes-mcyburg {
+  width: 300px;
+  height: 300px;
 }
 
-.link-empresa {
-    text-align: center;
-    display: inline-block;
-    background-color: rgb(224, 224, 224);
+.imagenespequenias {
+  width: 200px;
+  height: 200px;
 }
 
 /* logo */
 .logo--propio {
-    width: 45px;
-    height: 45px;
-    margin-right: 1.3rem;
-}
-
-/*Todas las estructuras*/
-.estructurap1 {
-    color: darkslategrey;
-    display: contents;
-    text-align: center;
-}
-
-/*Todos los titulos*/
-.titulos1 {
-    font-weight: bold;
-    font-size: 32px;
-    display: block;
-    text-align: center;
-}
-
-.parrafos1 {
-    font-size: 22px;
-    display: inline-block;
-}
-
-/*Tamaño de imagenes, lo puse con (ni) para no usar la ñ*/
-.imagenestamanio {
-    width: 700px;
-    height: 450px;
-
-}
-
-/*Tamaño de las imagenes de mcdonals y burguerkings*/
-.imagenes-mcyburg {
-    width: 300px;
-    height: 300px;
+  width: 45px;
+  height: 45px;
+  margin-right: 1.3rem;
 }
 
 .foot {
-    margin-top: 20px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-align: center;
-    background-color: grey;
-    font-family: "Sedan SC", serif;
-    text-decoration: none;
-    font-weight: bolder;
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  background-color: grey;
+  font-family: "Sedan SC", serif;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* Todas las estructuras */
+.estructurap1 {
+  color: darkslategrey;
+  display: contents;
+  text-align: center;
+}
+
+/* Todos los titulos */
+.titulos1 {
+  font-weight: bold;
+  font-size: 32px;
+  display: block;
+  text-align: center;
+}
+
+/* parrafos */
+.parrafos1 {
+  font-size: 22px;
+  display: inline-block;
 }
 
 .carrusel {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
+
+.link-compras {
+  font-weight: bolder;
+  font-family: "Sedan SC", serif;
+  color: black;
+  background-color: rgb(140, 247, 140);
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.estructurap1 {
+  display: flex;
+}
+.estructurap1 .link-empresa {
+  text-align: center;
+  display: inline-block;
+  background-color: rgb(224, 224, 224);
+}
+
+.extra {
+  display: flex;
+  justify-content: center;
+}
+
+.extraimg {
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+/*grid*/
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.elemento-galeria {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.elemento-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.elemento-galeria img:hover {
+  transform: scale(1.1);
+}
+
+/* flex */
+.precios {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.elemento-precio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

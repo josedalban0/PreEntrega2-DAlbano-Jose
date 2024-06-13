@@ -1,0 +1,53 @@
+.extra {
+    display: flex;
+    justify-content: center
+}
+
+.extraimg {
+    display: flex;
+    width: 200px;
+    height: 200px; 
+}
+
+/*grid*/
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.elemento-galeria {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.elemento-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.elemento-galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* flex */
+
+.precios {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.elemento-precio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
