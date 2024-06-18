@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*COLORES*/
+.cajapeque, .imagenespequenias {
+  height: 200px;
+  width: 200px;
+}
+
+/*profe en algunos lados force los extend y maps ya que eran requisitos para el preentregable pero luego quiero quitarlos ya que no me sirven tanto como las variables y otras herramientas que si me sirven*/
 * {
   padding: 0;
   margin: 0;
@@ -7,41 +14,56 @@
 
 /* Zona de navegacion */
 .navegacion {
-  background-color: rgb(104, 104, 104);
+  background-color: grey;
   font-weight: bolder;
   font-family: "Sedan SC", serif;
   color: black;
   font-size: 1.3rem;
 }
 
-/* Telefonos */
+/* TELEFONO */
 @media only screen and (max-width: 400px) {
   body {
-    background-color: grey;
+    background-color: rgb(182, 182, 182);
   }
   body .carousel-inner img {
     max-width: 400px;
     height: 350px;
   }
+  body .extlet {
+    font-size: 20px;
+    color: black;
+  }
+  body .precios {
+    font-size: 25px;
+  }
+  body .link-compras {
+    font-size: 25px;
+  }
   body .foot {
+    padding-top: 5px;
     font-size: 11px;
   }
   body .imagenestamanio {
     width: 400px;
     height: 250px;
   }
-  body .titulos1,
+  body .titulos1 {
+    font-size: 20px;
+    color: black;
+  }
   body .parrafos1 {
+    font-size: 16px;
     color: black;
   }
   body .link-empresa {
     width: 350px;
   }
 }
-/* Tablets */
+/* TABLET */
 @media only screen and (min-width: 401px) and (max-width: 900px) {
   body {
-    background-color: rgba(255, 187, 0, 0.877);
+    background-color: rgba(209, 209, 209, 0.877);
   }
   body .carousel-inner img {
     max-width: 48rem;
@@ -51,31 +73,56 @@
     width: 400px;
     height: 250px;
   }
-  body .titulos1,
+  body .foot {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  body .extlet {
+    font-size: 20px;
+    color: black;
+  }
+  body .precios {
+    font-size: 20px;
+  }
+  body .link-compras {
+    font-size: 25px;
+  }
+  body .titulos1 {
+    font-size: 23px;
+    color: black;
+  }
   body .parrafos1 {
+    font-size: 18px;
     color: black;
   }
   body .link-empresa {
     width: 350px;
   }
 }
-/* Tamaño de imagenes, lo puse con (ni) para no usar la ñ */
+.cajapeque, .imagenespequenias {
+  height: 200px;
+  width: 200px;
+}
+
+/*profe en algunos lados force los extend y maps ya que eran requisitos para el preentregable pero luego quiero quitarlos ya que no me sirven tanto como las variables y otras herramientas que si me sirven*/
+/*TAMAÑO DE IMAGENES EN GENERAL*/
 .imagenestamanio {
   width: 700px;
   height: 450px;
 }
 
-/* Tamaño de las imagenes de mcdonals y burguerkings */
+/*TAMAÑO DE LAS IMAGENES DE MC DONALS Y BURGUER KING*/ /*para el prentregable luego quitar 300px x 300px(este posiblemente lo deje ya que me sirven los mixins)*/
 .imagenes-mcyburg {
-  width: 300px;
   height: 300px;
+  width: 300px;
 }
 
+/*TAMAÑO DE LOS EXTRAS*/ /*para el prentregable luego quitar 200px x 200px*/
 .imagenespequenias {
-  width: 200px;
-  height: 200px;
+  /*aca le agregaria cosas distintas que se complementarian con .cajapeque*/
 }
 
+/*Profe no las anide porque no me dejaba y se bugueaba todas las imagenes creo que es porque utilizo todo atravez de clases*/
 /* logo */
 .logo--propio {
   width: 45px;
@@ -83,81 +130,62 @@
   margin-right: 1.3rem;
 }
 
+/*FOOTER*/
 .foot {
-  margin-top: 20px;
-  color: rgb(0, 0, 0);
+  margin-top: 1rem;
+  color: black;
   text-decoration: none;
   text-align: center;
   background-color: grey;
   font-family: "Sedan SC", serif;
-  text-decoration: none;
   font-weight: bolder;
 }
 
-/* Todas las estructuras */
+/* TODOS LOS TITULOS */
+.titulos1 {
+  color: darkslategrey;
+  font-weight: bold;
+  font-size: 32px;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* TODAS LAS ESTRUCTURAS */
 .estructurap1 {
   color: darkslategrey;
   display: contents;
   text-align: center;
 }
 
-/* Todos los titulos */
-.titulos1 {
-  font-weight: bold;
-  font-size: 32px;
-  display: block;
-  text-align: center;
-}
-
-/* parrafos */
+/* TODOS LOS PARRAFOS */
 .parrafos1 {
   font-size: 22px;
   display: inline-block;
+  margin: 1.5rem 1.5rem 0rem 1.5rem;
 }
 
 .carrusel {
-  margin-bottom: 10px;
+  margin-bottom: 0.05rem;
   display: flex;
   justify-content: center;
 }
 
 .link-compras {
-  font-weight: bolder;
-  font-family: "Sedan SC", serif;
+  font-family: "Sedan SC"; /*para el prentregable luego quitar*/
   color: black;
   background-color: rgb(140, 247, 140);
   font-size: 40px;
   text-decoration: none;
 }
 
-.estructurap1 {
-  display: flex;
-}
-.estructurap1 .link-empresa {
+.link-empresa {
   text-align: center;
   display: inline-block;
   background-color: rgb(224, 224, 224);
 }
 
-.extlet {
-  font-weight: bolder;
-  font-family: "Sedan SC", serif;
-  margin-top: 10px;
-  font-size: 30px;
-}
-
-.extra {
-  display: flex;
-  justify-content: center;
-}
-
-.extraimg {
-  display: flex;
-  width: 200px;
-  height: 200px;
-}
-
-/*grid*/
+/*grid-galeria*/
 .galeria {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -165,24 +193,21 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-
-.elemento-galeria {
+.galeria .elemento-galeria {
   overflow: hidden;
   border-radius: 10px;
 }
-
-.elemento-galeria img {
+.galeria .elemento-galeria img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s;
 }
-
-.elemento-galeria img:hover {
+.galeria .elemento-galeria img:hover {
   transform: scale(1.1);
 }
 
-/* flex */
+/* flex-precios */
 .precios {
   display: flex;
   justify-content: space-between;
@@ -190,14 +215,26 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-
-.elemento-precio {
+.precios .elemento-precio {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   border-radius: 10px;
   text-align: center;
+}
+
+.extra {
+  display: flex;
+  justify-content: center;
+  color: darkslategrey;
+}
+
+.extlet {
+  font-weight: bolder;
+  font-family: "Sedan SC", serif;
+  margin-top: 10px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

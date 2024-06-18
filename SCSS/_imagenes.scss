@@ -1,16 +1,20 @@
-/* Tamaño de imagenes, lo puse con (ni) para no usar la ñ */
+@import "extend";
+@import "mixins";
+/*TAMAÑO DE IMAGENES EN GENERAL*/
 .imagenestamanio {
     width: 700px;
     height: 450px;
 }
 
-/* Tamaño de las imagenes de mcdonals y burguerkings */
+/*TAMAÑO DE LAS IMAGENES DE MC DONALS Y BURGUER KING*/ /*para el prentregable luego quitar 300px x 300px(este posiblemente lo deje ya que me sirven los mixins)*/
 .imagenes-mcyburg {
-    width: 300px;
-    height: 300px;
+    @include sizes (300px, 300px)
 }
 
+/*TAMAÑO DE LOS EXTRAS*/ /*para el prentregable luego quitar 200px x 200px*/
 .imagenespequenias {
-    width: 200px;
-    height: 200px;
+    @extend .cajapeque;
+    /*aca le agregaria cosas distintas que se complementarian con .cajapeque*/
 }
+
+/*Profe no las anide porque no me dejaba y se bugueaba todas las imagenes creo que es porque utilizo todo atravez de clases*/

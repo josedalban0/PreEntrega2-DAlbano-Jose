@@ -1,52 +1,43 @@
-/* Todas las estructuras */
-.estructurap1 {
-    color: darkslategrey;
-    display: contents;
-    text-align: center;
-}
-
-/* Todos los titulos */
+/* TODOS LOS TITULOS */
 .titulos1 {
+    color: $primario-color;
     font-weight: bold;
     font-size: 32px;
     display: block;
     text-align: center;
+    margin-top: 1rem;
 }
 
-/* parrafos */
+/* TODAS LAS ESTRUCTURAS */
+.estructurap1 {
+    color: $primario-color;
+    display: contents;
+    text-align: center;
+}
+
+/* TODOS LOS PARRAFOS */
 .parrafos1 {
     font-size: 22px;
     display: inline-block;
+    margin: 1.5rem 1.5rem 0rem 1.5rem;
 }
 
 .carrusel {
-    margin-bottom: 10px;
+    margin-bottom: 0.05rem;
     display: flex;
     justify-content: center;
 }
 
 .link-compras {
-    font-weight: bolder;
-    font-family: "Sedan SC", serif;
-    color: black;
-    background-color: rgb(140, 247, 140);
+    font-family: map-get($fuentes, f-principal-n); /*para el prentregable, luego quitar*/
+    color: $secundario-color;
+    background-color: $compra-color;
     font-size: 40px;
     text-decoration: none;
 }
 
-.estructurap1 {
-    display: flex;
-
-    .link-empresa {
-        text-align: center;
-        display: inline-block;
-        background-color: rgb(224, 224, 224);
-    }
-}
-
-.extlet {
-    font-weight: bolder;
-    font-family: "Sedan SC", serif;
-    margin-top: 10px;
-    font-size: 30px;
+.link-empresa {
+    text-align: center;
+    display: inline-block;
+    background-color: $empresa-color;
 }

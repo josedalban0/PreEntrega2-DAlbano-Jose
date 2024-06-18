@@ -1,7 +1,8 @@
 /* Zona de navegacion */
 .navegacion {
-    background-color: rgb(104, 104, 104);
+    background-color: $terciario-color;
     font-weight: bolder;
     font-family: "Sedan SC", serif;
-    color: black;
-    font-size: 1.3rem; }
+    color: $secundario-color;
+    font-size: 1.3rem;
+}
