@@ -14,6 +14,7 @@
 
 /* Zona de navegacion */
 .navegacion {
+  background: linear-gradient(to right, #0000ff, #00ffff);
   background-color: grey;
   font-weight: bolder;
   font-family: "Sedan SC", serif;
@@ -29,6 +30,10 @@
   body .carousel-inner img {
     max-width: 400px;
     height: 350px;
+  }
+  body .galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 13rem);
   }
   body .extlet {
     font-size: 20px;
