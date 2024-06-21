@@ -1,4 +1,5 @@
 /* TELEFONO */
+
 @media only screen and (max-width: 400px) {
 
     body {
@@ -51,6 +52,10 @@
         .link-empresa {
             width: 350px;
         }
+
+        .imagenes-mcyburg {
+            @include sizes (200px, 200px)
+        }
     }
 }
 
@@ -101,6 +106,10 @@
 
         .link-empresa {
             width: 350px;
+        }
+
+        .imagenes-mcyburg {
+            @include sizes (250px, 250px)
         }
     }
 }

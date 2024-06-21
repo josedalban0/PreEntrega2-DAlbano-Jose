@@ -64,6 +64,10 @@
   body .link-empresa {
     width: 350px;
   }
+  body .imagenes-mcyburg {
+    height: 200px;
+    width: 200px;
+  }
 }
 /* TABLET */
 @media only screen and (min-width: 401px) and (max-width: 900px) {
@@ -102,6 +106,10 @@
   }
   body .link-empresa {
     width: 350px;
+  }
+  body .imagenes-mcyburg {
+    height: 250px;
+    width: 250px;
   }
 }
 .cajapeque, .imagenespequenias {
@@ -185,6 +193,7 @@
 }
 
 .link-empresa {
+  margin-top: 1rem;
   text-align: center;
   display: inline-block;
   background-color: rgb(224, 224, 224);
