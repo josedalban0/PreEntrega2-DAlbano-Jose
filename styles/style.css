@@ -154,15 +154,6 @@
   font-weight: bolder;
 }
 
-/*FONDO DE PANTALLA*/
-body {
-  background-image: url(../multimedia/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
-}
-
 /* TODOS LOS TITULOS */
 .titulos1 {
   color: darkslategrey;
