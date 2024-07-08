@@ -7,8 +7,8 @@
         background-color: $telefono-color;
 
         .carousel-inner img {
-            max-width: 400px;
-            height: 350px;
+            max-width: 48rem;
+            height: 17rem;
         }
 
         .galeria {
@@ -49,6 +49,11 @@
             color: $secundario-color;
         }
 
+        .parrafos2 {
+            font-size: 16px;
+            color: $secundario-color;
+        }
+
         .link-empresa {
             width: 350px;
         }
@@ -68,7 +73,7 @@
 
         .carousel-inner img {
             max-width: 48rem;
-            height: 350px;
+            height: 17rem;
         }
 
         .imagenestamanio {
@@ -100,6 +105,11 @@
         }
 
         .parrafos1 {
+            font-size: 18px;
+            color: $secundario-color;
+        }
+
+        .parrafos2 {
             font-size: 18px;
             color: $secundario-color;
         }

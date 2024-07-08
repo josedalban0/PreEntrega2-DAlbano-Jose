@@ -26,8 +26,8 @@
     background-color: rgb(182, 182, 182);
   }
   body .carousel-inner img {
-    max-width: 400px;
-    height: 350px;
+    max-width: 48rem;
+    height: 17rem;
   }
   body .galeria {
     grid-template-columns: 1fr;
@@ -59,6 +59,10 @@
     font-size: 16px;
     color: black;
   }
+  body .parrafos2 {
+    font-size: 16px;
+    color: black;
+  }
   body .link-empresa {
     width: 350px;
   }
@@ -74,7 +78,7 @@
   }
   body .carousel-inner img {
     max-width: 48rem;
-    height: 350px;
+    height: 17rem;
   }
   body .imagenestamanio {
     width: 400px;
@@ -99,6 +103,10 @@
     color: black;
   }
   body .parrafos1 {
+    font-size: 18px;
+    color: black;
+  }
+  body .parrafos2 {
     font-size: 18px;
     color: black;
   }
@@ -179,8 +187,8 @@
 
 .parrafos2 {
   font-size: 22px;
-  display: inline-block;
   margin: 1.5rem 1.5rem 1rem 1.5rem;
+  display: inline-block;
 }
 
 .carrusel {
