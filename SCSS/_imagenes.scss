@@ -8,6 +8,7 @@
 
 /*TAMAÑO DE LAS IMAGENES DE MC DONALS Y BURGUER KING*/ /*para el prentregable luego quitar 300px x 300px(este posiblemente lo deje ya que me sirven los mixins)*/
 .imagenes-mcyburg {
+    margin-top: 1.3rem;
     @include sizes (300px, 300px)
 }
 
