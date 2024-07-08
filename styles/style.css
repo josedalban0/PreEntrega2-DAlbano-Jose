@@ -121,20 +121,21 @@
   height: 450px;
 }
 
-/*TAMAÑO DE LAS IMAGENES DE MC DONALS Y BURGUER KING*/ /*para el prentregable luego quitar 300px x 300px(este posiblemente lo deje ya que me sirven los mixins)*/
+/*TAMAÑO DE LAS IMAGENES DE MC DONALS Y BURGUER KING*/
+/*para el prentregable luego quitar 300px x 300px*/
 .imagenes-mcyburg {
   margin-top: 1.3rem;
   height: 300px;
   width: 300px;
 }
 
-/*TAMAÑO DE LOS EXTRAS*/ /*para el prentregable luego quitar 200px x 200px*/
+/*TAMAÑO DE LOS EXTRAS*/
+/*para el prentregable luego quitar 200px x 200px*/
 .imagenespequenias {
   /*aca le agregaria cosas distintas que se complementarian con .cajapeque*/
 }
 
-/*Profe no las anide porque no me dejaba y se bugueaba todas las imagenes creo que es porque utilizo todo atravez de clases*/
-/* logo */
+/* logo principal */
 .logo--propio {
   width: 45px;
   height: 45px;
@@ -198,6 +199,7 @@
 }
 
 .link-empresa {
+  text-decoration: none;
   margin-top: 1rem;
   text-align: center;
   display: inline-block;
